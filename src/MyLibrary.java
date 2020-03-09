@@ -41,8 +41,8 @@ public class MyLibrary implements Library{
 	public Collection<Book> getBooksSortedByPageCount() {
 		
 		return books.stream()
-					.sorted(Comparator.comparingInt(Book::getPageCount))
-					.collect(Collectors.toList());
+			    .sorted(Comparator.comparingInt(Book::getPageCount))
+			    .collect(Collectors.toList());
 	}
 
 	@Override
